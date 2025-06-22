@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body class="m-0 p-0 flex justify-center items-center h-screen bg-[#EFD082]">
+<div class="bg-white p-8 rounded-xl min-h-[40vh] mb-28 w-[55vh]"  id="container">
+<h1 class="text-4xl font-bold text-center">Currency converter</h1>
+<form class="mt-5 mb-8">
+    <div id="amount">
+        <p>Enter amount</p>
+        <input class="w-[100%] mt-1  border-[1px] border-gray-400 rounded-xl h-12 text-lg pl-4" type="number" value ="1" type="text">
+    </div>
+    <div class="flex justify-between items-center mt-6" id="dropdown">
+            <div id="from">
+                <p>From</p>
+                <div class="flex justify-center items-center border-[1px] border-gray-400 rounded-lg w-28 mt-2 h-10"  id="select_container">
+                    <img id="flagimage" class="max-w-10"  src="https://flagsapi.com/US/flat/64.png">
+                    <select id="select1" class="w-[100%] border-[1px] " name="from">
+                        <!-- <option value="USD">USD</option>
+                        <option value="INR">INR</option>
+                        <option value="EUR">EUR</option>
+                        <option value="AUD">AUD</option> -->
+                    </select>
+                </div>
+        </div>
+        <i  class="fa-solid fa-arrow-right-arrow-left mt-8 text-xl"></i>
+        <div id="to">
+            <p>To</p>
+          
+            <div class="flex justify-center items-center border-[1px] border-gray-400 rounded-lg w-28 mt-2 h-10" id="select_container">
+                <img class="max-w-10" src="https://flagsapi.com/IN/flat/64.png">
+                <select id="select2" class="w-[100%]  border-[1px]  " name="to">
+                    <!-- <option value="USD">USD</option> -->
+                    <!-- <option value="INR" selected>INR</option>
+                    <option value="EUR">EUR</option>
+                    <option value="AUD">AUD</option> -->
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="my-8" id="msg">USD = INR</div>
+    <button class="w-[100%]  border-2 rounded-xl py-2 bg-[#852a70] text-white cursor-pointer">Get Exchange rate</button>
+</form>
+
+
+
+
+</div>
+
+
+<script src="/js/country.js"></script>
+<script src="/js/index.js"></script>
+</body>
+</html>
